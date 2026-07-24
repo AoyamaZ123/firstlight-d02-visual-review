@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>FIRST LIGHT D02 Visual Review</title>
+  <style>
+    :root { color-scheme: dark; font-family: Inter, system-ui, sans-serif; }
+    body { margin: 0; background: #0b0d10; color: #eef1f4; }
+    main { width: min(1500px, calc(100% - 32px)); margin: 32px auto 64px; }
+    h1 { margin: 0 0 8px; font-size: clamp(24px, 4vw, 42px); }
+    p { color: #aeb7c2; margin: 0 0 28px; }
+    section { margin: 36px 0; }
+    h2 { margin: 0 0 14px; font-size: 22px; }
+    .pair { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 14px; }
+    figure { margin: 0; border: 1px solid #242a31; background: #12161b; border-radius: 12px; overflow: hidden; }
+    img { display: block; width: 100%; height: auto; }
+    figcaption { padding: 10px 12px; color: #cbd2da; }
+    @media (max-width: 760px) { .pair { grid-template-columns: 1fr; } }
+  </style>
+</head>
+<body>
+  <main>
+    <h1>FIRST LIGHT D02 / 007 Visual Comparison</h1>
+    <p>评判两者之间有多大差距，该如何修改以达到007场景水平</p>
+
+    <section>
+      <h2>Reload</h2>
+      <div class="pair">
+        <figure><img src="images/current-reload.png" alt="Current D02 Reload"><figcaption>当前 D02</figcaption></figure>
+        <figure><img src="images/reference-reload.png" alt="007 reference Reload"><figcaption>007 参考</figcaption></figure>
+      </div>
+    </section>
+
+    <section>
+      <h2>Vault</h2>
+      <div class="pair">
+        <figure><img src="images/current-vault.png" alt="Current D02 Vault"><figcaption>当前 D02</figcaption></figure>
+        <figure><img src="images/reference-vault.png" alt="007 reference Vault"><figcaption>007 参考</figcaption></figure>
+      </div>
+    </section>
+
+    <section>
+      <h2>Aim</h2>
+      <div class="pair">
+        <figure><img src="images/current-aim.png" alt="Current D02 Aim"><figcaption>当前 D02</figcaption></figure>
+        <figure><img src="images/reference-aim.png" alt="007 reference Aim"><figcaption>007 参考</figcaption></figure>
+      </div>
+    </section>
+  </main>
+</body>
+</html>
