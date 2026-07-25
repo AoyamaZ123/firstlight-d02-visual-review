@@ -27,7 +27,7 @@
     <section>
       <h2>Reload</h2>
       <div class="pair">
-        <figure><img src="images/current-reload.png" alt="Current D02 Reload"><figcaption>当前已保存版本（已通过基线 + Foreground Cargo 净 Y -1000）</figcaption></figure>
+        <figure><img src="images/current-reload.png" alt="Current D02 Reload"><figcaption>当前已保存版本（锁定曝光 EV 13.0）</figcaption></figure>
         <figure><img src="images/reference-reload.png" alt="007 reference Reload"><figcaption>007 参考</figcaption></figure>
       </div>
     </section>
@@ -35,7 +35,7 @@
     <section>
       <h2>Vault</h2>
       <div class="pair">
-        <figure><img src="images/current-vault.png" alt="Current D02 Vault"><figcaption>当前已保存版本（已通过基线 + Foreground Cargo 净 Y -1000）</figcaption></figure>
+        <figure><img src="images/current-vault.png" alt="Current D02 Vault"><figcaption>当前已保存版本（锁定曝光 EV 13.0）</figcaption></figure>
         <figure><img src="images/reference-vault.png" alt="007 reference Vault"><figcaption>007 参考</figcaption></figure>
       </div>
     </section>
@@ -43,7 +43,7 @@
     <section>
       <h2>Aim</h2>
       <div class="pair">
-        <figure><img src="images/current-aim.png" alt="Current D02 Aim"><figcaption>当前已保存版本（已通过基线 + Foreground Cargo 净 Y -1000）</figcaption></figure>
+        <figure><img src="images/current-aim.png" alt="Current D02 Aim"><figcaption>当前已保存版本（锁定曝光 EV 13.0）</figcaption></figure>
         <figure><img src="images/reference-aim.png" alt="007 reference Aim"><figcaption>007 参考</figcaption></figure>
       </div>
     </section>
@@ -149,12 +149,22 @@
     </section>
 
     <section>
-      <h2>Exposure EV 13.5（已保存，等待 5.6sol Pro 复核）</h2>
-      <p>只在现有无限范围 Post Process Volume 上把曝光 Min/Max EV 同时锁为 13.5，并启用这两个 override。旧 Pro 会话判断不能回退，但新规则要求先确认模型自述为 5.6sol Pro 后再正式六图评审，因此当前保存结果仍待复核。MCP 全字段比较确认仅四个目标字段变化；车辆、飞机、成熟资产、灯光、UDS、Landscape/Foliage 和全部 Actor Transform 均未修改。</p>
+      <h2>Exposure EV 13.5（GPT-5.6 Pro：仅保留为诊断版）</h2>
+      <p>新会话先确认模型为 GPT-5.6 Pro，再提交六图和指定问题；全程未点击“立即回答”。最终判定为 NOT READY_FOR_DIRECTOR_REVIEW：EV 13.5 可保留为诊断证据，但不应作为最终基准，第一步应在锁定曝光的前提下回落约 0.4–0.6 stop。</p>
       <div class="pair">
         <figure><img src="images/exposure-ev135-trial-reload.png" alt="Exposure EV 13.5 trial Reload"><figcaption>Exposure EV 13.5 / Reload</figcaption></figure>
         <figure><img src="images/exposure-ev135-trial-vault.png" alt="Exposure EV 13.5 trial Vault"><figcaption>Exposure EV 13.5 / Vault</figcaption></figure>
         <figure><img src="images/exposure-ev135-trial-aim.png" alt="Exposure EV 13.5 trial Aim"><figcaption>Exposure EV 13.5 / Aim</figcaption></figure>
+      </div>
+    </section>
+
+    <section>
+      <h2>Exposure EV 13.0（当前已保存）</h2>
+      <p>按 GPT-5.6 Pro 的合规复核，只把 PostProcessVolume_1 的 Min/Max 从 13.5 降到 13.0；两个锁定开关保持启用，其他 Post Process 字段、全部 Actor Transform、车辆、C-17 和成熟资产均未修改。下一步停止曝光单变量迭代，转向构图、主光/环境填充层次和 D02 自有地表历史。</p>
+      <div class="pair">
+        <figure><img src="images/exposure-ev130-reload.png" alt="Exposure EV 13.0 Reload"><figcaption>Exposure EV 13.0 / Reload</figcaption></figure>
+        <figure><img src="images/exposure-ev130-vault.png" alt="Exposure EV 13.0 Vault"><figcaption>Exposure EV 13.0 / Vault</figcaption></figure>
+        <figure><img src="images/exposure-ev130-aim.png" alt="Exposure EV 13.0 Aim"><figcaption>Exposure EV 13.0 / Aim</figcaption></figure>
       </div>
     </section>
   </main>
