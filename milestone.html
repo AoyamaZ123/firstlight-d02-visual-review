@@ -1,0 +1,112 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>FIRST LIGHT D02 当前里程碑 / 007 对比</title>
+  <style>
+    :root {
+      color-scheme: dark;
+      font-family: Inter, "Microsoft YaHei", system-ui, sans-serif;
+    }
+    body {
+      margin: 0;
+      background: #0b0d10;
+      color: #eef1f4;
+    }
+    main {
+      width: min(1500px, calc(100% - 32px));
+      margin: 28px auto 56px;
+    }
+    h1 {
+      margin: 0 0 8px;
+      font-size: clamp(24px, 4vw, 42px);
+    }
+    .intro {
+      margin: 0 0 28px;
+      color: #aeb7c2;
+    }
+    section {
+      margin: 32px 0;
+    }
+    h2 {
+      margin: 0 0 12px;
+      font-size: 22px;
+    }
+    .pair {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 14px;
+    }
+    figure {
+      margin: 0;
+      overflow: hidden;
+      border: 1px solid #242a31;
+      border-radius: 12px;
+      background: #12161b;
+    }
+    img {
+      display: block;
+      width: 100%;
+      height: auto;
+    }
+    figcaption {
+      padding: 10px 12px;
+      color: #cbd2da;
+    }
+    @media (max-width: 760px) {
+      .pair {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <h1>FIRST LIGHT D02 当前里程碑 / 007 对比</h1>
+    <p class="intro">仅包含当前已保存的三个固定机位，以及各自对应的 007 飞机场景参考图。</p>
+
+    <section>
+      <h2>Reload</h2>
+      <div class="pair">
+        <figure>
+          <img src="images/current-reload.png" alt="当前 D02 Reload 固定机位">
+          <figcaption>当前已保存版本 / Reload</figcaption>
+        </figure>
+        <figure>
+          <img src="images/reference-reload.png" alt="007 Reload 参考">
+          <figcaption>007 参考 / Reload</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <section>
+      <h2>Vault</h2>
+      <div class="pair">
+        <figure>
+          <img src="images/current-vault.png" alt="当前 D02 Vault 固定机位">
+          <figcaption>当前已保存版本 / Vault</figcaption>
+        </figure>
+        <figure>
+          <img src="images/reference-vault.png" alt="007 Vault 参考">
+          <figcaption>007 参考 / Vault</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <section>
+      <h2>Aim</h2>
+      <div class="pair">
+        <figure>
+          <img src="images/current-aim.png" alt="当前 D02 Aim 固定机位">
+          <figcaption>当前已保存版本 / Aim</figcaption>
+        </figure>
+        <figure>
+          <img src="images/reference-aim.png" alt="007 Aim 参考">
+          <figcaption>007 参考 / Aim</figcaption>
+        </figure>
+      </div>
+    </section>
+  </main>
+</body>
+</html>
